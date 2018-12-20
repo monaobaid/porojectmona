@@ -4,6 +4,7 @@ import { FoodmenuComponent } from './foodmenu/foodmenu.component';
 import { MenudetailComponent } from './menudetail/menudetail.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'/foodMenu' , pathMatch:'full'},
   
   {path:'foodMenu',component:FoodmenuComponent},
 {path:'foodMenu/:id',component:MenudetailComponent}];
